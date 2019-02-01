@@ -1,0 +1,257 @@
+<!--
+Happyou -- a template for presentations based on HTML5, CSS, and JavaScript
+Copyright (C) 2019 Johannes Schönke
+https://github.com/h-a-n-n-e-s
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+For further details, see http://www.gnu.org/licenses/
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Please use UTF-8 encoding in your editor. -->
+<meta charset='UTF-8'>
+
+<!-- MathJax related stuff, if you do not need it, comment out the lines below.
+MathJax is currently included from an online server.
+If you prefer a local copy, please download https://github.com/mathjax/MathJax/archive/master.zip -->
+<script type='text/javascript' async
+  src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_SVG'>
+</script>
+
+<!-- All styles are controlled from template.css, see there for more information. -->
+<link rel='stylesheet' href='template.css'>
+
+<!-- Icon and text for the browser tab. -->
+<link href='logos/Happyou.png' rel='icon'>
+<title> Happyou </title>
+
+</head>
+<body>
+
+
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+<!-- The title slide. -->
+<div id='mainTitle'>
+  
+  <div class='slide' id='current'>
+    
+    <h1> A HTML5 Presentation Template </h1>
+    <h2> This is a Subtitle </h2>
+    <br>
+    <h3> Author <br>
+      <object data='logos/dragon_oist.svg' type='image/svg+xml' style='margin-top:0.5em;width:8em'></object><br>
+      <object data='logos/text.svg' type='image/svg+xml' style='width:32em'></object>
+    </h3>
+    <h3> Place, Date </h3>
+    
+  </div>
+  
+</div>
+
+
+<!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+<!-- The frame is shown on all numbered slides.
+It is a footer containing leftCornerText, footerImage, and the slide number on the right -->
+<div id='frame'>
+  
+  <!-- the text displayed in the lower left corner on all numbered slides -->
+  <p id='leftCornerText'> Your Name </p>
+  
+  <!-- the image displayed at the bottom on all numbered slides -->
+  <object id='footerImage' data='logos/dragon_oist_text.svg' type='image/svg+xml'></object>
+  
+  
+  <!-- Below the numbered slides start -->
+  <div class='slide'> <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <p class='title'> example: using columns, lists, and images </p>
+    
+    <!-- Use the columns class to start a column environment. -->
+    <div class='columns'>
+      
+      <!-- First column with specified width. -->
+      <div style='width:52%; font-size:0.8em'>
+        <p> core technologies for the world wide web </p>
+        <ul>
+          <li> XML
+            <ul>
+              <li> encoding documents in a human-readable and machine-readable format </li>
+              <li> arbitrary data structures </li>
+              <li> free open standard </li>
+              <li> relevant dialects for the web:
+                <span style='color:#0ff'> HTML5 </span>,
+                <span style='color:#0ff'> SVG </span>
+              </li>
+              
+            </ul>
+          </li>
+          <li> <span style='color:#0ff'> JavaScript </span>
+            <ul>
+              <li> interactivity </li>
+              <li> animation </li>
+              <li> data processing </li>
+              <li> ... </li>
+            </ul>
+          </li>
+          <li> <span style='color:#0ff'> CSS </span>
+            <ul>
+              <li> styling </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- second column with a width filling up the remaining space -->
+      <div class='fill'>
+        <figure style='width:15em'>
+          <img src='images/the_whole_internet.jpg'>
+          <figcaption>
+            The Whole Internet <br> User's Guide &amp; Catalog <br> (published 1992)
+          </figcaption>
+        </figure>
+      </div>
+      
+    </div>
+    
+    
+  </div><div class='slide'> <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <p class='title'> example: image, video </p>
+    
+    <div class='columns'>
+      
+      <div style='width:50%; font-size:0.8em'>
+        <p> image formats: JPG, PNG, GIF, BMP </p>
+        <figure style='width:12em'>
+          <img src='images/neptun.jpg'>
+          <figcaption>
+            neptun.jpg
+          </figcaption>
+        </figure>
+        <figure style='width:12em'>
+          <img src='images/funnel.gif'>
+          <figcaption>
+            funnel.gif
+            <br>
+            <a href='https://beesandbombs.tumblr.com' target='_blank'> beesandbombs.tumblr.com </a>
+          </figcaption>
+        </figure>
+      </div>
+      
+      <div style='width:50%; font-size:0.8em'>
+        <p> video format: MP4 </p>
+        <figure style='width:60%'>
+          <video loop='true' controls ><source src='video/MagMob480p.mp4' type='video/mp4'></video>
+          <figcaption>
+            MagMob480p.mp4
+          </figcaption>
+        </figure>
+        <figure style='width:35%'>
+          <!-- The video below uses the autoPlay class and starts playing after the first key event
+          (standard 'autoplay' doesn't work anymore in some browsers) -->
+          <video class='autoPlay' loop='true'><source src='video/magnets.mp4' type='video/mp4'></video>
+          <figcaption>
+            auto play video<br>(after one key event)
+          </figcaption>
+        </figure>
+      </div>
+      
+    </div>
+    
+    
+  </div><div class='slide'> <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <p class='title'> example: streaming, live stream, audio </p>
+    
+    <p> streaming </p>
+    <figure style='width:12em'>
+      <iframe style='width:12em;height:9em' frameBorder='0'
+      src='https://www.youtube.com/embed/jNQXAC9IVRw?rel=0&iv_load_policy=3'></iframe>
+      <figcaption>
+        the first YouTube video ever (2005)
+      </figcaption>
+    </figure>
+    
+    <br>
+    
+    <div class='columns'>
+      
+      <div style='width:50%'>
+        <p> live stream (source might be shaky...) </p>
+        <figure style='width:20em'>
+          <audio controls preload='none'>
+            <source src='http://ice1.somafm.com/cliqhop-256-mp3' type='audio/mpeg'>
+          </audio>
+          <figcaption>
+            http://ice1.somafm.com/cliqhop-256-mp3
+          </figcaption>
+        </figure>
+      </div>
+      
+      <div style='width:50%'>
+        <p> audio from file </p>
+        <figure style='width:20em'>
+          <audio controls>
+            <source src='audio/niw_loop.mp3' type='audio/mpeg'>
+          </audio>
+          <figcaption>
+            Ната́ша и Ва́ня
+          </figcaption>
+        </figure>
+      </div>
+      
+    </div>
+    
+    
+  </div><div class='slide'> <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <p class='title'> example: including mathematical formulae using MathJax </p>
+    
+    <p style='font-size:2em;text-align:center'>
+      Euler's favorite identity
+      <!-- Use LaTeX commands inside \[ \] or \( \) to let them be typeset through MathJax. -->
+      \[
+        e^{i\pi}+1=0
+      \]
+    </p>
+    <div class='fill' style='height:10em'>
+      <a style='font-size:2em' href='https://www.mathjax.org/' target='_blank'> https://www.mathjax.org/ </a>
+    </div>
+    
+    
+  </div><div class='slide'> <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <p class='title'> example: including a website </p>
+    
+    <p style='font-size:80%'> (mouse click inside the website inhibits slide navigation, click outside the website to allow navigation again) </p>
+    
+    <div class='fill'>
+      <iframe src='http://www.babylonjs.com' style='width:95%;height:18.5em;margin-top:1em' frameBorder='0'></iframe>
+    </div>
+    
+    
+  </div><div class='slide'> <!--@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+    <p class='title'> example: UTF-8 encoding allows to write symbols just as they are </p>
+    
+    <div class='fill' style='height:20em'>
+      <p style='font-size:2.8em'> ありがとうごさいます </p>
+    </div>
+    
+  </div>
+  
+  
+  <!-- scripts @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+  
+  <!-- the java script file provides navigation and other functionality -->
+  <script src='template.js'></script>
+  
+</div> <!-- closing id='frame' -->
+</body>
+</html>

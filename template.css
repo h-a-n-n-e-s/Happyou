@@ -1,0 +1,250 @@
+/*
+Happyou -- a template for presentations based on HTML5, CSS, and JavaScript
+Copyright (C) 2019 Johannes Schönke
+https://github.com/h-a-n-n-e-s
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+For further details, see http://www.gnu.org/licenses/
+*/
+
+@font-face {
+  /* you can specify a custom font here */
+  font-family: customFont;
+  
+  src: url('fonts/futura light bt.ttf');
+  /* src: url('fonts/cmunss.ttf'); */
+  /* src: url('fonts/alte-din-1451-mittelschrift.regular.ttf'); */
+}
+
+body {
+  background-color: #000; /* this is the color off the slides (should be left black) */
+  
+  /* select your favorite text color here */
+  color: #fff;
+  
+  /* select your favorite font here */
+  
+  /* either a standard font */
+  /* font-family: 'Verda', sans-serif; */
+  
+  /* or a custom font if customFont was specified above */
+  font-family: customFont;
+}
+
+#frame, #mainTitle {
+  
+  /* select your favorite slide background color here */
+  background-color: #222;
+  
+  width: 100vw;
+  max-height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  overflow: hidden;
+  font-size: 4vh; font-weight: 300;
+  
+  /* ------- here you can choose the aspect ratio of your slides (one has to be chosen) ------- */
+  
+  /* aspect ratio  4:3 */
+  /* height:75vw;max-width:calc(400vh/3);} @media(min-height:75vw){#frame,#mainTitle{font-size:3vw;} */
+  
+  /* aspect ratio  8:5 */
+  height:62.5vw;max-width:160vh;} @media(min-height:62.5vw){#frame,#mainTitle{font-size:2.5vw;}
+  
+  /* aspect ratio 16:9 */
+  /* height:56.25vw;max-width:calc(1600vh/9);} @media(min-height:56.25vw){#frame,#mainTitle{font-size:2.25vw;} */
+
+}
+
+/* slide navigation and styling*/
+
+.slide { display: none; }
+#current { display: block; }
+
+#mainTitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+h1 { font-size:   2em; font-weight: 400; margin-top: 0; margin-bottom: 1em; }
+h2 { font-size: 1.2em; font-weight: 300; margin-top: 0; }
+h3 { font-size: 0.8em; font-weight: 300; margin-top: 0; padding:0}
+
+.columns {
+  display: flex;
+  margin-top: 1em;
+}
+.fill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+}
+
+.title {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-bottom: 0;
+  color: #0ff;
+}
+.counter, .footer, .cornerText {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 0.5em;
+  color: #0ff;
+}
+.counter {
+  right: 0;
+  padding-right: 1em;
+  font-size: 0.7em;
+}
+.footer {
+  width: 100%;
+  height: 1.3em;
+  text-align: center;
+  padding: 0;
+}
+.footerObject { height: 100%; }
+.cornerText {
+  left: 0;
+  padding-left: 1em;
+  font-size: 0.7em;
+}
+#leftCornerText, #footerImage { display: none; }
+
+/* paragraphs */
+p {
+  margin: 0;
+  padding: 0;
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align: justify;
+}
+p.center {
+  display: inline-block;
+  margin: 0;
+}
+
+p + p { margin-top: 1em;}
+
+#renderCanvas {
+  outline: none;
+}
+
+/* links */
+a {
+  color: #aaa;
+  text-decoration: underline;
+}
+a:link    { text-decoration: underline; }
+a:visited { text-decoration: underline; }
+a:hover   { text-decoration: underline; color: #666; }
+a:active  { text-decoration: underline; color: #666; }
+
+/* lists */
+ul {
+  margin-left: 3em;
+  margin-right: 1em;
+  padding: 0;
+}
+li {
+  margin-top: 1em;
+}
+ul ul {
+  margin-left: 2em;
+  list-style-type: disc;
+}
+ul ul li {
+  margin-top: 0.5em;
+}
+p + ul {
+  margin-top: 0;
+  margin-left: 4em;
+}
+
+/* figures, video, audio */
+figure {
+  text-align: center;
+  font-size: 0.8em;
+  text-indent: 0;
+  border: 0.2em #444 solid;
+  background-color: #444;
+  margin: auto;
+  margin-top: 1em;
+  padding: 0;
+}
+figcaption {
+  padding-top: 0.2em;
+}
+img, video, audio {
+  display: block;
+  width: 100%;
+}
+
+/* tables */
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+td {
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 8px;
+}
+
+/* other stuff */
+.button {
+  font-size: 0.8em;
+  background-color: #555;
+  opacity: 0.7;
+  border: none;
+  color: #fff;
+  padding: 0.3em;
+  margin: 0.3em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: DIN1451;
+  outline: none;
+}
+.small {
+  padding: 0;
+  margin: 0;
+  margin-top: 0.1em;
+}
+
+.touchElement {
+  font-size: 0.8em;
+  stroke: none;
+  fill: #555;
+  opacity: 0.7;
+}
+.button:hover, .touchElement:hover, .tetSwitch:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.invert   {-webkit-filter: invert(100%)  ;filter: invert(100%);  }
+.blur     {-webkit-filter: blur(2px)     ;filter: blur(2px);     }
+.saturate {-webkit-filter: saturate(150%);filter: saturate(150%);}
+
+/* prevent key events on object tags -- otherwise interference with page navigation */
+object { pointer-events: none; }
