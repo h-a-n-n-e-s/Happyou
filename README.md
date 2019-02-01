@@ -1,6 +1,9 @@
-#  Happyou -- HTML5-based presentations that make you happy
+#  Happyou &mdash; HTML-based presentations that make you happy
 
-Happyou (from Japanese 発表（はっぴょう）[ha／ppʲoː‾] meaning "presentation") is an HTML5-based template to prepare presentations. It might be interesting for people currently using LaTeX Beamer or other scripting solutions for that purpose. The poor support of interactive multimedia content in LaTeX Beamer was the main reason to start this project. In a modern browser, the possibilities for interactive audio-visual presentations are unlimited and furthermore, all core technologies for the world wide web are free, open, and well-documented standards. What other reasons do you need?
+Happyou (from Japanese 発表（はっぴょう）[ha／ppʲoː‾] meaning "presentation") is an HTML-based template to prepare presentations. It might be interesting for people currently using LaTeX Beamer or other scripting solutions for that purpose. The poor support of interactive multimedia content in LaTeX Beamer was the main reason to start this project. In a modern browser, the possibilities for interactive audio-visual presentations are unlimited and furthermore, all core technologies for the world wide web are free, open, and well-documented standards. What other reasons do you need?
+
+
+### As simple as possible &mdash; edit one HTML and one CSS file, that's it!
 
 There are already many online presentation creation apps out there where you can click yourself into (questionable) happiness. Happyou is not like that at all but follows the idea that "whatever you see is based on what you write in plain text" (like LaTeX) and is kept as simple as possible for maximum clarity. You edit one HTML and one CSS file, that's it for editing! There is one JavaScript file providing basic functionality, like switching slides with the arrow keys (you would only edit that one to alter or add functionality). Any other files you need are the media you want to present -- your images, videos, music, fonts, interactive visualizations, or that website you would like to embed in your talk!
 
