@@ -20,6 +20,8 @@ There are already many online presentation creation apps out there where you can
 - The style and functionality of Happyou can be modified and extended very easily since only free, open, and well-documented standards are used.
 
 
+![happyou_template_screen_shot](https://user-images.githubusercontent.com/20040365/52105865-c7df5280-2633-11e9-9b0b-98996a8d3506.jpg)
+
 ### How to use
 
 To have a working example, it is useful to download all files including the folders with example images, videos, etc. Then just open the HTML file in your favorite browser. Edit the HTML or CSS template file in your favorite editor and then reload the HTML file in the browser to see the changes. To spot possible errors it is a good idea to open the browser's console.
