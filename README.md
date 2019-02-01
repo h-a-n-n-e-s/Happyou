@@ -5,7 +5,7 @@ Happyou (from Japanese 発表（はっぴょう）[ha／ppʲoː‾] meaning "pre
 
 ### As simple as possible &mdash; edit one HTML and one CSS file, that's it!
 
-There are already many online presentation creation apps out there where you can click yourself into (questionable) happiness. Happyou is not like that at all but follows the idea that "whatever you see is based on what you write in plain text" (like LaTeX) and is kept as simple as possible for maximum clarity. You edit one HTML and one CSS file, that's it for editing! There is one JavaScript file providing basic functionality, like switching slides with the arrow keys (you would only edit that one to alter or add functionality). Any other files you need are the media you want to present -- your images, videos, music, fonts, interactive visualizations, or that website you would like to embed in your talk!
+There are already many online presentation creation apps out there where you can click yourself into (questionable) happiness. Happyou is not like that at all but follows the idea that "whatever you see is based on what you write in plain text" (like LaTeX) and is kept as simple as possible for maximum clarity. You edit one HTML and one CSS file, that's it for editing! There is one JavaScript file providing basic functionality, like switching slides with the arrow keys (you would only edit that one to alter or add functionality). Any other files you need are the media you want to present &mdash; your images, videos, music, fonts, interactive visualizations, or that website you would like to embed in your talk!
 
 
 ### Features
